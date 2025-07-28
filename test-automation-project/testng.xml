@@ -1,0 +1,12 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="AllAPITests">
+  <test name="API Regression">
+    <classes>
+    <class name="api.CreateItemAPITests"/>
+    <class name="api.EditItemAPITests"/>
+    <class name="api.DeleteItemAPITests"/>
+    <class name="ui.LoginTests"/>
+</classes>
+
+  </test>
+</suite>

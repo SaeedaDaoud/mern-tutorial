@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [AllAPITests]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="API Regression(failed)">
+    <classes>
+      <class name="api.EditItemAPITests">
+        <methods>
+          <include name="setup"/>
+          <include name="editItem"/>
+        </methods>
+      </class> <!-- api.EditItemAPITests -->
+      <class name="api.DeleteItemAPITests">
+        <methods>
+          <include name="setup"/>
+          <include name="deleteItem"/>
+        </methods>
+      </class> <!-- api.DeleteItemAPITests -->
+      <class name="api.CreateItemAPITests">
+        <methods>
+          <include name="setup"/>
+          <include name="createItem"/>
+        </methods>
+      </class> <!-- api.CreateItemAPITests -->
+      <class name="ui.LoginTests">
+        <methods>
+          <include name="setUp"/>
+          <include name="loginWithInvalidCredentials"/>
+          <include name="tearDown"/>
+          <include name="loginWithValidCredentials"/>
+        </methods>
+      </class> <!-- ui.LoginTests -->
+    </classes>
+  </test> <!-- API Regression(failed) -->
+</suite> <!-- Failed suite [AllAPITests] -->
